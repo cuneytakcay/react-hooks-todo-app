@@ -1,20 +1,8 @@
 import React, { useState } from 'react';
+import { Header } from './Header';
+import { TodoList } from './TodoList';
+import { TodoForm } from './TodoForm';
 import './App.css';
-
-const Header = () => (
-	<div className="header">
-		<h1>TODO LIST</h1>
-	</div>
-);
-
-const TodoList = ({ todo }) => <div className="todo-item">{todo.text}</div>
-
-const TodoForm = () => (
-	<form>
-		<input type="text" placeholder="Add new item..." />
-		<button>Add</button>
-	</form>
-);
 
 function App() {
 	const [todos, setTodos] = useState([
