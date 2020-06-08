@@ -18,7 +18,7 @@ export function TodoForm({ addItem }) {
                 value={value}
                 onChange={e => setValue(e.target.value)}
             />
-            <button className="add-btn" aria-label="Add">Add</button>
+            <button className="add-btn" aria-label="Add">&#10010; ADD</button>
         </form>
     );
 }

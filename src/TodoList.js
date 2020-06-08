@@ -7,7 +7,7 @@ export function TodoList({ todo, id, completeItem, deleteItem }) {
 			style={{ textDecoration: todo.isChecked ? 'line-through' : '' }}
 		>
             <button 
-                style={{ fontSize: todo.isChecked ? '14px' : '0px' }}
+                style={{ fontSize: todo.isChecked ? '18px' : '0px' }}
                 className="check-btn" 
                 arial-label="Check"
                 onClick={() => completeItem(id)}
